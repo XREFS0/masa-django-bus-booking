@@ -1,0 +1,21 @@
+"""
+Developed by MASA
+All Rights Reserved.
+"""
+
+from django.db import migrations, models
+
+
+class Migration(migrations.Migration):
+
+    dependencies = [
+        ("reservationApp", "0002_bus_category"),
+    ]
+
+    operations = [
+        migrations.AddField(
+            model_name="bus",
+            name="seats",
+            field=models.FloatField(default=0, max_length=5),
+        ),
+    ]
